@@ -2,8 +2,6 @@ package Business::CardInfo;
 use Moose;
 use Moose::Util::TypeConstraints;
 
-our $VERSION = '0.08';
-
 subtype 'CardNumber'
   => as 'Int'
    => where { validate($_) };
