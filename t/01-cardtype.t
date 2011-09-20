@@ -25,3 +25,5 @@ $bc->number('5100000000005460');
 is($bc->type, 'MasterCard');
 $bc->number('4508750000005461');
 is($bc->type, 'Visa Debit');
+$bc->number('5573510000000004');
+is($bc->type, 'MasterCard Debit');
